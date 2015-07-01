@@ -1,7 +1,35 @@
 <?php
+<<<<<<< HEAD
 require_once 'inc/config.php';
 require_once 'inc/func.php';
 require_once 'inc/db.php';
+=======
+session_name('movies_session');
+session_start();
+
+require_once 'inc/func.php';
+require_once 'inc/db.php';
+
+/*
+echo '<pre>';
+print_r($_SERVER);
+echo '</pre>';
+exit();
+*/
+
+$current_year = date('Y');
+
+$current_page = basename($_SERVER['PHP_SELF']);
+
+$pages = array(
+	'index.php' => 'Accueil',
+	'random.php' => 'Film au hasard',
+	'news.php' => 'Actualités',
+	'search.php' => 'Recherche',
+	'contact.php' => 'Contact'
+);
+
+>>>>>>> fc9f3abd01b51e27b1883d9a7a7765410a3174c3
 ?>
 <!DOCTYPE html>
 <html lang="en">

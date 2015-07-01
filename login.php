@@ -1,6 +1,7 @@
 <?php
 include_once 'header.php';
 
+<<<<<<< HEAD
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
 
@@ -13,6 +14,8 @@ $loginUrl = $helper->getLoginUrl(
 	)
 );
 
+=======
+>>>>>>> fc9f3abd01b51e27b1883d9a7a7765410a3174c3
 $expiration = 60 * 60 * 24 * 7;  // 7 jours
 
 $remember_me = getRememberMe($expiration);
@@ -122,6 +125,7 @@ if (!empty($_POST)) {
 	</div>
 </form>
 
+<<<<<<< HEAD
 <hr>
 
 <form class="form-horizontal" action="" method="POST" novalidate>
@@ -134,6 +138,8 @@ if (!empty($_POST)) {
 	</div>
 </form>
 
+=======
+>>>>>>> fc9f3abd01b51e27b1883d9a7a7765410a3174c3
 <?php
 end:
 

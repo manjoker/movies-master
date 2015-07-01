@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> fc9f3abd01b51e27b1883d9a7a7765410a3174c3
 	<!-- NAVBAR -->
 	<nav class="navbar navbar-fixed-top navbar-inverse">
 		<div class="container">

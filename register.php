@@ -1,6 +1,7 @@
 <?php
 include_once 'header.php';
 
+<<<<<<< HEAD
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
 use Facebook\FacebookRequest;
@@ -72,6 +73,8 @@ try {
 	echo '</div>';
 }
 
+=======
+>>>>>>> fc9f3abd01b51e27b1883d9a7a7765410a3174c3
 //debug($_POST);
 
 $lastname = !empty($_POST['lastname']) ? $_POST['lastname'] : '';
@@ -133,7 +136,11 @@ if (!empty($_POST)) {
 				echo '<div class="alert alert-danger" role="danger">Une erreur est survenue</div>';
 			} else {
 				$_SESSION['user_id'] = $user_id;
+<<<<<<< HEAD
 				$_SESSION['firstname'] = $firstname;
+=======
+				$_SESSION['firstname'] = $user['firstname'];
+>>>>>>> fc9f3abd01b51e27b1883d9a7a7765410a3174c3
 
 				echo '<div class="alert alert-success" role="success">Authentification réussie</div>';
 				echo redirectJS('index.php', 2);

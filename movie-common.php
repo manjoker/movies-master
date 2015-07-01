@@ -6,6 +6,7 @@ if (empty($movie)) {
 	exit('Undefined movie');
 }
 
+<<<<<<< HEAD
 // On récupère l'id du film sur lequel on se trouve
 $id = $movie['id'];
 
@@ -24,6 +25,8 @@ arsort($_SESSION['movies']);
 // On ne garde que les 4 derniers films visités en préservant les clés du tableau
 $_SESSION['movies'] = array_slice($_SESSION['movies'], 0, 4, $preserve_keys = true);
 
+=======
+>>>>>>> fc9f3abd01b51e27b1883d9a7a7765410a3174c3
 $_movie_genres = $db->query('SELECT * FROM genres ORDER BY genre_name ASC')->fetchAll();
 
 $movie_genres = array();

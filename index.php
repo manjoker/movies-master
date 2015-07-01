@@ -33,6 +33,7 @@ $rand_movies = $db->query('SELECT * FROM movies ORDER BY RAND() LIMIT 3')->fetch
 
 				</div><!-- .marketing -->
 
+<<<<<<< HEAD
 				<?php
 				if (!empty($_SESSION['movies'])) {
 
@@ -74,6 +75,8 @@ $rand_movies = $db->query('SELECT * FROM movies ORDER BY RAND() LIMIT 3')->fetch
 				</div><!-- #visited-movies -->
 				<?php } ?>
 
+=======
+>>>>>>> fc9f3abd01b51e27b1883d9a7a7765410a3174c3
 				<hr>
 
 				<div id="top-movies" class="row">
